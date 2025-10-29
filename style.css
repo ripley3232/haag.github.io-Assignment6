@@ -1,0 +1,50 @@
+/* This is an external CSS file */
+/* Styles here apply to elements in the HTML file */
+
+/* The # symbol means this is an id selector */
+/* This styles the element with id="jumbalaya" */
+#jumbalaya {
+  color: red;
+  background-color: lightyellow;
+  padding: 15px;
+  font-size: 18px;
+}
+
+/* The . (period) symbol means this is a class selector */
+/* This styles ALL elements with class="superhero" */
+/* Classes can be reused on multiple elements, unlike ids which should be unique */
+.superhero {
+  background-color: lightblue;
+  padding: 15px;
+  border: 2px solid navy;
+  margin-bottom: 20px;
+}
+
+/* Tag selector - targets ALL h1 elements on the page */
+/* No # or . needed - just the tag name */
+/* This will style every h1 tag in the HTML */
+h1 {
+  color: darkgreen;
+  text-align: center;
+  font-size: 36px;
+  text-decoration: underline;
+}
+
+/* Class selector for span elements */
+/* This styles any element with class="highlight" */
+/* Often used on spans to highlight specific words */
+.highlight {
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  padding: 2px 5px;
+}
+
+/* Class selector for the frosting div */
+/* This will style the div with class="frosting" */
+.frosting {
+  background-color: lightpink;
+  padding: 15px;
+  border: 3px dashed pink;
+  margin-top: 10px;
+}
