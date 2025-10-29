@@ -1,0 +1,110 @@
+<html>
+  <!-- This is the head section where we can add title and styles later -->
+  <head>
+    <title>My First Website</title>
+    <!-- Link to an external CSS file - this connects our HTML to a separate style sheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  
+  <!-- The body contains everything visible on the page -->
+  <body>
+    
+    <!-- Example 1: Using the color property to change text color (inline style) -->
+    <div style="color:blue">
+      <h4>I love the ocean</h4>
+      <p>The ocean is beautiful and blue</p>
+    </div>
+    
+    <!-- Example 2: Using font-size to change how big the text appears (inline style) -->
+    <div style="font-size:20px">
+      <h4>Big text example</h4>
+      <p>This text is larger than normal</p>
+    </div>
+    
+    <!-- Example 3: Using an external stylesheet with an id -->
+    <!-- The id="jumbalaya" connects this div to styles in the style.css file -->
+    <div id="jumbalaya">
+      <p>Cajun seasoning with hot pepper sauce and shrimp = amazing!!</p>
+    </div>
+    
+    <!-- Example 4: Using a class with external stylesheet -->
+    <!-- Multiple divs can share the same class name -->
+    <!-- class="superhero" applies the same styles from style.css to all three divs below -->
+    <div class="superhero">
+      <h2>Superman</h2>
+      <p>Superman is known for his incredible strength, ability to fly, and heat vision. He protects Metropolis from danger and always stands up for truth and justice.</p>
+    </div>
+
+    <div class="superhero">
+      <h2>Wonder Woman</h2>
+      <p>Wonder Woman is an Amazonian warrior with superhuman strength, speed, and the Lasso of Truth. She fights for peace and equality across the world.</p>
+    </div>
+
+    <div class="superhero">
+      <h2>Spider-Man</h2>
+      <p>Spider-Man has the proportional strength and agility of a spider, can cling to walls, and has a spider-sense that warns him of danger. He swings through New York City saving people.</p>
+    </div>
+    
+    <!-- Example 5: Styling an HTML tag directly -->
+    <!-- ALL h1 tags on the page will get the styling defined in style.css -->
+    <h1>Welcome to My Website!</h1>
+    <p>This heading is styled by targeting the h1 tag directly in the CSS file.</p>
+    
+    <!-- Example 6: Using a span element -->
+    <!-- Span lets you style just PART of a text element, not the whole thing -->
+    <!-- It's an inline element, meaning it doesn't create a new line -->
+    <h2>My favorite color is <span style="color:purple; font-weight:bold">purple</span> because it's so vibrant!</h2>
+    <p>I also enjoy the colors <span style="color:orange">orange</span> and <span style="color:green">green</span> very much.</p>
+    
+    <!-- Example 7: Using a span with a class from external stylesheet -->
+    <!-- The class="highlight" applies styling from style.css -->
+    <p>Today I learned something <span class="highlight">amazing</span> about CSS!</p>
+    <p>It's <span class="highlight">super cool</span> how we can style individual words within sentences.</p>
+    
+    <!-- Example 8: Different HTML elements -->
+    <div style="border: 2px solid black; padding: 20px; margin-top: 20px;">
+      <h3>HTML Elements Demo</h3>
+      
+      <!-- 1. Bold tag - makes text bold -->
+      <p>This is <b>bold text</b> using the b tag.</p>
+      
+      <!-- 2. Span tag - inline styling for part of text -->
+      <p>This uses a <span style="color:red">red span</span> to color one word.</p>
+      
+      <!-- 3. Image tag - displays an image -->
+      <!-- src = source (the image URL), alt = alternative text description -->
+      <img src="https://via.placeholder.com/150" alt="Placeholder image">
+      
+      <!-- 4. Italic tag - makes text italic -->
+      <p>This is <i>italic text</i> using the i tag.</p>
+      
+      <!-- 5. Hyperlink tag - creates a clickable link -->
+      <!-- href = hyperlink reference (where the link goes) -->
+      <p>Visit <a href="https://www.example.com">this website</a> to learn more.</p>
+    </div>
+    
+    <!-- Example 9: More HTML elements and nesting -->
+    <div style="border: 2px solid gray; padding: 20px; margin-top: 20px;">
+      <h3>Example 9: Heading Levels and Nesting</h3>
+      
+      <!-- 1. h6 tag - smallest heading level (h1 is largest, h6 is smallest) -->
+      <h6>This is an h6 heading - the smallest</h6>
+      
+      <!-- 2. h2 tag - second largest heading level -->
+      <h2>This is an h2 heading - very large</h2>
+      
+      <!-- 3. Paragraph tag - for regular text content -->
+      <p>This is a paragraph tag with some text explaining the example.</p>
+      
+      <!-- 4. Div with class "frosting" -->
+      <!-- Divs can contain other elements nested inside them -->
+      <div class="frosting">
+        <!-- 5. h5 tag nested inside the frosting div -->
+        <h5>This is an h5 heading inside the frosting div</h5>
+        <p>This paragraph is also inside the frosting div.</p>
+      </div>
+    </div>
+    
+  </body>
+  
+</html>
