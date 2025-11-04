@@ -48,3 +48,18 @@ h1 {
   border: 3px dashed pink;
   margin-top: 10px;
 }
+
+/* Clearfix technique - makes a container properly wrap around floated children */
+/* The ::after pseudo-element creates content after the element */
+.clearfix-demo::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Additional styling for the clearfix demo box */
+.clearfix-demo {
+  background-color: lavender;
+  padding: 10px;
+  border: 3px solid purple;
+}
