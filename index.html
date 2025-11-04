@@ -73,7 +73,7 @@
       
       <!-- 3. Image tag - displays an image -->
       <!-- src = source (the image URL), alt = alternative text description -->
-      <img src="greybird.jpg" alt="Smiling Ostrich" style="width: 50px;">
+      <img src="https://via.placeholder.com/150" alt="Placeholder image">
       
       <!-- 4. Italic tag - makes text italic -->
       <p>This is <i>italic text</i> using the i tag.</p>
@@ -103,6 +103,108 @@
         <h5>This is an h5 heading inside the frosting div</h5>
         <p>This paragraph is also inside the frosting div.</p>
       </div>
+    </div>
+    
+    <!-- Example 10: Understanding Border, Padding, and Margin -->
+    <div style="padding: 20px; margin-top: 20px;">
+      <h3>Example 10: The CSS Box Model</h3>
+      
+      <!-- Box 1: Demonstrating BORDER -->
+      <!-- Border is the line around the element -->
+      <div style="background-color: lightcoral; border: 5px solid darkred; padding: 10px; margin: 10px;">
+        <h4>Box 1: Border</h4>
+        <p>This box has a thick 5px solid dark red BORDER around it. The border is the line that wraps around the content.</p>
+      </div>
+      
+      <!-- Box 2: Demonstrating PADDING -->
+      <!-- Padding is the space INSIDE the box, between content and border -->
+      <div style="background-color: lightblue; border: 2px solid navy; padding: 30px; margin: 10px;">
+        <h4>Box 2: Padding</h4>
+        <p>This box has 30px of PADDING. Padding creates space INSIDE the box between the text and the border. Notice how much breathing room the text has!</p>
+      </div>
+      
+      <!-- Box 3: Demonstrating MARGIN -->
+      <!-- Margin is the space OUTSIDE the box, between this box and other elements -->
+      <div style="background-color: lightgreen; border: 2px solid darkgreen; padding: 10px; margin: 40px;">
+        <h4>Box 3: Margin</h4>
+        <p>This box has 40px of MARGIN. Margin creates space OUTSIDE the box, pushing other elements away. Notice the large gap between this box and the others!</p>
+      </div>
+    </div>
+    
+    <!-- Example 11: Float, Clear, and Clearfix -->
+    <div style="padding: 20px; margin-top: 20px; border: 2px solid purple;">
+      <h3>Example 11: Float, Clear, and Clearfix</h3>
+      
+      <!-- Experiment 1: Float Left -->
+      <!-- Float makes an element move to one side and allows text to wrap around it -->
+      <div style="background-color: lightyellow; padding: 10px; margin-bottom: 20px;">
+        <h4>Experiment 1: Float Left</h4>
+        <img src="greybird.jpg" alt="Grey bird" style="float: left; margin-right: 15px; width: 150px;">
+        <p>This image is floated to the LEFT. Notice how the text wraps around it! Float removes the element from normal document flow and pushes it to the specified side (left or right). The text flows around the floated image naturally.</p>
+        <p>Float is commonly used for wrapping text around images or creating multi-column layouts.</p>
+      </div>
+      
+      <!-- Experiment 2: Float Right with Clear -->
+      <!-- Clear stops elements from wrapping around floated elements -->
+      <div style="background-color: lightcyan; padding: 10px; margin-bottom: 20px;">
+        <h4>Experiment 2: Float Right</h4>
+        <img src="greybird.jpg" alt="Grey bird" style="float: right; margin-left: 15px; width: 150px;">
+        <p>This image is floated to the RIGHT. The text wraps around it on the left side.</p>
+        <p style="clear: right;">This paragraph has "clear: right" which means it will NOT wrap around right-floated elements. It moves below the floated image instead.</p>
+      </div>
+      
+      <!-- Experiment 3: Clearfix -->
+      <!-- Clearfix is a technique to make a container properly contain its floated children -->
+      <div class="clearfix-demo">
+        <h4>Experiment 3: Clearfix</h4>
+        <img src="greybird.jpg" alt="Grey bird" style="float: left; margin-right: 15px; width: 150px;">
+        <img src="greybird.jpg" alt="Grey bird" style="float: left; margin-right: 15px; width: 150px;">
+        <p>Both images are floated left. The parent div uses clearfix to properly contain the floated images. Without clearfix, the parent div might collapse and not show its background color around the floated elements!</p>
+      </div>
+      
+    </div>
+    
+    <!-- Example 12: Position Properties -->
+    <div style="padding: 20px; margin-top: 20px; border: 2px solid orange;">
+      <h3>Example 12: CSS Position Properties</h3>
+      
+      <!-- 1. Position: Static (default) -->
+      <!-- Static is the default position - elements flow normally in the document -->
+      <div style="background-color: lightgray; padding: 10px; margin-bottom: 20px;">
+        <h4>1. Position: Static (Default)</h4>
+        <img src="greybird.jpg" alt="Grey bird" style="position: static; width: 100px; border: 2px solid black;">
+        <p>This image has position: static, which is the DEFAULT. Elements with static position follow the normal document flow. Top, bottom, left, right properties have NO effect on static elements.</p>
+      </div>
+      
+      <!-- 2. Position: Relative -->
+      <!-- Relative positioning moves element relative to its normal position -->
+      <div style="background-color: lightyellow; padding: 10px; margin-bottom: 20px;">
+        <h4>2. Position: Relative</h4>
+        <p>Normal position reference:</p>
+        <img src="greybird.jpg" alt="Grey bird" style="width: 100px; border: 2px solid green;">
+        <p>Same image with relative positioning (moved 30px left and 20px down from its normal spot):</p>
+        <img src="greybird.jpg" alt="Grey bird" style="position: relative; left: 30px; top: 20px; width: 100px; border: 2px solid red;">
+        <p>Position: relative moves the element RELATIVE to where it would normally be. The space it originally occupied is still reserved!</p>
+      </div>
+      
+      <!-- 3. Position: Absolute -->
+      <!-- Absolute positioning removes element from flow and positions relative to nearest positioned ancestor -->
+      <div style="background-color: lightblue; padding: 10px; margin-bottom: 20px; position: relative; height: 200px;">
+        <h4>3. Position: Absolute</h4>
+        <p>This container has position: relative (the parent). The bird image inside has position: absolute.</p>
+        <img src="greybird.jpg" alt="Grey bird" style="position: absolute; top: 50px; right: 20px; width: 100px; border: 2px solid blue;">
+        <p>Position: absolute removes the element from normal flow and positions it relative to its nearest POSITIONED ancestor (parent with position: relative, absolute, or fixed). Here it's positioned 50px from top and 20px from right of this blue container.</p>
+      </div>
+      
+      <!-- 4. Position: Fixed -->
+      <!-- Fixed positioning keeps element in same place even when scrolling -->
+      <div style="background-color: lightcoral; padding: 10px; margin-bottom: 20px;">
+        <h4>4. Position: Fixed</h4>
+        <p>Look at the bottom-right corner of your browser window! There's a small bird image with position: fixed.</p>
+        <img src="greybird.jpg" alt="Grey bird - fixed position" style="position: fixed; bottom: 20px; right: 20px; width: 80px; border: 3px solid darkred; background-color: white; padding: 5px;">
+        <p>Position: fixed removes the element from normal flow and positions it relative to the BROWSER WINDOW. It stays in the same place even when you scroll! The bird will always stay in the bottom-right corner.</p>
+      </div>
+      
     </div>
     
   </body>
